@@ -309,13 +309,13 @@ def segment_transform(file_list, conf, mode):
             for p12 in myroot.iter('height'):
                 p12.text = str(img_resize)
             for p1 in myroot.iter('xmin'):
-                p1.text = str(int(p1.text) / ratio_changed)
+                p1.text = str(int(int(p1.text) / ratio_changed))
             for p2 in myroot.iter('xmax'):
-                p2.text = str(int(p2.text) / ratio_changed)
+                p2.text = str(int(int(p2.text) / ratio_changed))
             for p3 in myroot.iter('ymin'):
-                p3.text = str(int(p3.text) / ratio_changed)
+                p3.text = str(int(int(p3.text) / ratio_changed))
             for p4 in myroot.iter('ymax'):
-                p4.text = str(int(p4.text) / ratio_changed)
+                p4.text = str(int(int(p4.text) / ratio_changed))
         else:
             # todo for position img changed case
             raise Exception("Error: Not implemented yet")

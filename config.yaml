@@ -1,16 +1,16 @@
 colab_run: true
-obj: nut
-augment_num: 2000
-val_ratio: 0.2
-grayscale: false
-img_resize: 640
-fill_square: true
-fill_square_color: 0
+obj: dl-sample # ** プロジェクト名前変わって下さい
+augment_num: 2000 # 何枚学習写真を作る
+val_ratio: 0.2 # トレーニング(train)と検証(val)の比率
+grayscale: false # ture:GRAY, false:RGB 
+img_resize: 640 # 写真サイズ
+fill_square: true # true:正方形, false:オリジナル(写真が正方形である必要がある)
+fill_square_color: 0 # fill_square=trueの場合　－＞　埋める色
 p_rotate: 0  # not allowed for supervised-learning yet
 rotate_angle_vari: 0  # not allowed for supervised-learning yet
-p_light: 0.4
-light_vari: 80
-p_noise: 0.4
-noise_vari: 0  # only 0 allowed now
+p_light: 0.4 # 明るさ変わる確率
+light_vari: 80 #　明るさ変わるレンジ（-x、x）
+p_noise: 0.4 #　ノイズ入れる確率
+noise_vari: 0  # ノイズの種類 0=ガウスノイズ
 p_horizonal_flip: 0  # not allowed for supervised-learning yet
 p_vertical_flip: 0  # not allowed for supervised-learning yet

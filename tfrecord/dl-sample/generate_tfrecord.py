@@ -28,14 +28,8 @@ FLAGS = flags.FLAGS
 
 # TO-DO これをラベルマップに置き換えます
 def class_text_to_int(row_label):
-    if row_label == 'base':
+    if row_label == 'dog':
         return 1
-    elif row_label == 'round':
-        return 2
-    elif row_label == 'cross':
-        return 3
-    elif row_label == 'ng':
-        return 4
     else:
         None
 

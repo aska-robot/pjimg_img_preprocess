@@ -1,6 +1,6 @@
 colab_run: true
 obj: dl-sample # ** プロジェクト名前変わって下さい
-augment_num: 2000 # 何枚学習写真を作る
+augment_num: 1000 # 何枚学習写真を作る
 val_ratio: 0.2 # トレーニング(train)と検証(val)の比率
 grayscale: false # ture:GRAY, false:RGB 
 img_resize: 640 # 写真サイズ

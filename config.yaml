@@ -1,0 +1,16 @@
+colab_run: true
+obj: nut
+augment_num: 2000
+val_ratio: 0.2
+grayscale: false
+img_resize: 640
+fill_square: true
+fill_square_color: 0
+p_rotate: 0  # not allowed for supervised-learning yet
+rotate_angle_vari: 0  # not allowed for supervised-learning yet
+p_light: 0.4
+light_vari: 80
+p_noise: 0.4
+noise_vari: 0  # only 0 allowed now
+p_horizonal_flip: 0  # not allowed for supervised-learning yet
+p_vertical_flip: 0  # not allowed for supervised-learning yet
